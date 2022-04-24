@@ -2,12 +2,16 @@ import React from "react";
 
 const PeoplesList = ({contacts}) => {
 
-    const listData = contacts.map((person)=>
-    <li>{person}</li>
+    const listData = contacts.map((person, index)=>
+    <li key={index}>{person}</li>
     )
 
     return (
-        <div>{listData}</div>
+        <div>
+            <ul>
+                {listData}
+            </ul>
+        </div>
     )
 }
 
