@@ -8,9 +8,13 @@ const CONTACTS = ['person1', 'person2', 'person3']
 const App = () => {
     const [contacts, setContacts] = useState(CONTACTS)
 
+    const addPersonToContacts = (contact) => {
+        setContacts([...contacts, contact])
+    }
+
     return (
         <div>
-            <AddPersonForm/>
+            <AddPersonForm addContact={addPersonToContacts}/>
             <PeoplesList contacts={contacts}/>
         </div>
     )
