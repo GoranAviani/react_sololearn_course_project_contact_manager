@@ -6,6 +6,7 @@ const AddPersonForm = ({addContact}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         addContact(person)
+        setPerson('')
     }
 
     const handleChange = (e) => {
