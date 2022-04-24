@@ -1,3 +1,5 @@
+Exercise as a part of SoloLearn React + Redux course. Course project from lession 15.1 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
