@@ -1,9 +1,9 @@
 import React from "react";
 
-const PeoplesList = () => {
+const PeoplesList = ({contacts}) => {
 
     return (
-        <div>Peoples List</div>
+        <div>{contacts}</div>
     )
 }
 
