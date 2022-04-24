@@ -3,11 +3,14 @@ import React, {useState} from "react";
 const AddPersonForm = () => {
     const [person, setPerson] = useState('')
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <input type='text'/>
-            <button onClick={console.log('click')}>Add person</button>
+            <button type="submit">Add person</button>
         </form>
     )
 }
