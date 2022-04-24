@@ -9,7 +9,7 @@ const App = () => {
 
     return (
         <div>
-            <AddPersonForm></AddPersonForm>
+            <AddPersonForm/>
             <PeoplesList contacts={CONTACTS}/>
         </div>
     )
