@@ -7,7 +7,7 @@ const CONTACTS = ['person1', 'person2', 'person3']
 const App = () => {
 
     return (
-        <div><PeoplesList></PeoplesList></div>
+        <div><PeoplesList/></div>
     )
 }
 
