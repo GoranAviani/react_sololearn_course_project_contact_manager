@@ -7,9 +7,14 @@ const AddPersonForm = () => {
         e.preventDefault()
     }
 
+    const handleChange = (e) => {
+        setPerson(e.target.value)
+        console.log(person)
+    }
+
     return (
         <form onSubmit={handleSubmit}>
-            <input type='text'/>
+            <input type='text' value={person} onChange={handleChange}/>
             <button type="submit">Add person</button>
         </form>
     )
