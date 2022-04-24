@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 
-const AddPersonForm = () => {
+const AddPersonForm = ({addContact}) => {
     const [person, setPerson] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        addContact(person)
     }
 
     const handleChange = (e) => {
         setPerson(e.target.value)
-        console.log(person)
     }
 
     return (
